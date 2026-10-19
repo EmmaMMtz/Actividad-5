@@ -82,10 +82,11 @@ def entrenar_modelo(nombre, clasificador, parametros,
         mlflow.log_param("test_size", 0.2)
         mlflow.log_param("random_state", 42)
 
-        mlflow.sklearn.log_model(
-            mejor_modelo,
-            name="modelo"
-        )
+       mlflow.sklearn.log_model(
+    sk_model=mejor_modelo,
+    name="modelo",
+    serialization_format="cloudpickle"
+)
 
         # Guardar los resultados de validacion cruzada
         resultados_cv = pd.DataFrame(busqueda.cv_results_)
