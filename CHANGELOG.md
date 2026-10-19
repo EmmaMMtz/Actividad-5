@@ -1,6 +1,6 @@
 # CHANGELOG — Actividad 5
 
-## Versión 1.0.0 — 19 de octubre de 2026
+## Versión 1.0.0 — 18 de octubre de 2026
 
 ### Descripción general
 
